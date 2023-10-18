@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+                Dictionary<string, int> marks = new Dictionary<string, int>();
+
+                marks.Add("математика", 5);
+                marks.Add("физика", 5);
+                marks.Add("английский язык", 4);
+                marks.Add("история", 4);
+                marks.Add("информатика", 3);
+                marks.Add("биология", 3);
+                marks.Add("химия", 3);
+                marks.Add("география", 4);
+                marks.Add("немецкий язык", 5);
+                marks.Add("русский язык", 5);
+
+                foreach (var mark in marks)
+                {
+                    Console.WriteLine($"Предмет:{mark.Key}, Оценка:{mark.Value}");
+                }
+            }
+
+        }
+
+    }
